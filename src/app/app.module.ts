@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { appRoutes } from './app.routing';
+import { FuseModule } from 'src/@fuse';
 
 
 const routerConfig: ExtraOptions = {
@@ -20,6 +21,7 @@ const routerConfig: ExtraOptions = {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FuseModule,
     RouterModule.forRoot(appRoutes, routerConfig)
   ],
   providers: [],
